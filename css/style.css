@@ -50,9 +50,13 @@ body, html {
 }
 
 .content {
+    background: rgba(5, 5, 5, 0.633); /*Fondo blanco semitransparente*/
     position: absolute;
     bottom: 10%;
     left: 10%;
-    color: white;
+    color: #f0f0f0;
     font-size: 3rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
 }
