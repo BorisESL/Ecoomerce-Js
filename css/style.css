@@ -1,17 +1,37 @@
-body, html {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.pagina-inicio {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     overflow: hidden;
 }
-.logo {
+
+ul {
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.logo-inicio {
     position: absolute;
     left: 10px;
     z-index: 1000;
 }
 
-.logo img {
+.logo-inicio img {
     width: 300px;
     height: auto;
 }
@@ -54,9 +74,67 @@ body, html {
     position: absolute;
     bottom: 10%;
     left: 10%;
-    color: #f0f0f0;
+    color: #ffffff;
     font-size: 3rem;
     padding: 1.5rem;
     border-radius: 2rem;
     text-decoration: none;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+aside {
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.boton-categoria {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main {
+   background-color: #e5e5e5;
+   padding: 1rem;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen {
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+}
+
