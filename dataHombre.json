@@ -1,0 +1,180 @@
+{
+    "hombre": {
+        "zapatillas": [
+            {
+                "id": "zapatilla-1",
+                "nombre": "Zapatillas Adidas",
+                "descripcion": "Zapatillas adidas Court Spec 2 Tenis adidas",
+                "precio": 79000,
+                "imagen": "../img/zapatilla1.webp"
+            },
+            {
+                "id": "zapatilla-2",
+                "nombre": "Zapatillas Adidas",
+                "descripcion": "Zapatillas Adidas Gamecourt Tenis adidas",
+                "precio": 79000,
+                "imagen": "../img/zapatilla2.webp"
+            },
+            {
+                "id": "zapatilla-3",
+                "nombre": "Zapatillas Nike",
+                "descripcion": "Zapatillas Nike Revolution 5 Hombre",
+                "precio": 81000,
+                "imagen": "../img/zapatilla3.webp"
+            },
+            {
+                "id": "zapatilla-4",
+                "nombre": "Zapatillas Puma",
+                "descripcion": "Zapatillas Puma Smash V2 Hombre",
+                "precio": 78000,
+                "imagen": "../img/zapatilla4.webp"
+            },
+            {
+                "id": "zapatilla-5",
+                "nombre": "Zapatillas Asics",
+                "descripcion": "Zapatillas Asics Royal Complete Hombre",
+                "precio": 83000,
+                "imagen": "../img/zapatilla5.webp"
+            },
+            {
+                "id": "zapatilla-6",
+                "nombre": "Zapatillas Asica",
+                "descripcion": "Zapatillas Asica Assert 8 Hombre",
+                "precio": 85000,
+                "imagen": "../img/zapatilla6.webp"
+            },
+            {
+                "id": "zapatilla-7",
+                "nombre": "Zapatillas Asics",
+                "descripcion": "Zapatillas Asics Gel Contend 6 Hombre",
+                "precio": 87000,
+                "imagen": "../img/zapatilla7.webp"
+            },
+            {
+                "id": "zapatilla-8",
+                "nombre": "Zapatillas Asics",
+                "descripcion": "Zapatillas Asics 574 Hombre",
+                "precio": 89000,
+                "imagen": "../img/zapatilla8.webp"
+            }
+        ],
+        "poleras": [
+            {
+                "id": "polera-1",
+                "nombre": "Polera Joma",
+                "descripcion": "Polera Deportiva Hombre Combi Verde Limón Joma",
+                "precio": 45000,
+                "imagen": "../img/polera1.webp"
+            },
+            {
+                "id": "polera-2",
+                "nombre": "Polera Joma",
+                "descripcion": "Polera Deportiva Hombre Combi Púrpura Joma",
+                "precio": 47000,
+                "imagen": "../img/polera2.webp"
+            },
+            {
+                "id": "polera-3",
+                "nombre": "Polera Yonex",
+                "descripcion": "Polera Hombre Yonex Crew Neck 10562 Azul 2024",
+                "precio": 43000,
+                "imagen": "../img/polera3.webp"
+            },
+            {
+                "id": "polera-4",
+                "nombre": "Polera Yonex",
+                "descripcion": "Polera Yonex 10559 Para Tenis Verde Versión 2024",
+                "precio": 44000,
+                "imagen": "../img/polera4.webp"
+            },
+            {
+                "id": "polera-5",
+                "nombre": "Polera Babolat",
+                "descripcion": "Polera Babolat Para Tennis Play Polo Azul",
+                "precio": 46000,
+                "imagen": "../img/polera5.webp"
+            },
+            {
+                "id": "polera-6",
+                "nombre": "Polera Babolat",
+                "descripcion": "Polera Babolat Play Roja Tenis / Padel",
+                "precio": 45000,
+                "imagen": "../img/polera6.webp"
+            },
+            {
+                "id": "polera-7",
+                "nombre": "Under Armour",
+                "descripcion": "Polera Sportstyle Marino Under Armour",
+                "precio": 47000,
+                "imagen": "../img/polera7.webp"
+            },
+            {
+                "id": "polera-8",
+                "nombre": "Under Amour",
+                "descripcion": "Polera Ua Golazo 3.0 Rojo Under Armour",
+                "precio": 48000,
+                "imagen": "../img/polera8.webp"
+            }
+        ],
+        "shorts": [
+            {
+                "id": "short-1",
+                "nombre": "Short Wilson",
+                "descripcion": "Short Wilson Flex Negro",
+                "precio": 35000,
+                "imagen": "../img/short1.webp"
+            },
+            {
+                "id": "short-2",
+                "nombre": "Short Wilson",
+                "descripcion": "Short Wilson Flex Blanco Tenis / Padel",
+                "precio": 37000,
+                "imagen": "../img/short2.webp"
+            },
+            {
+                "id": "short-3",
+                "nombre": "Short Joma",
+                "descripcion": "Short Joma Drive Azul Royal",
+                "precio": 36000,
+                "imagen": "../img/short3.webp"
+            },
+            {
+                "id": "short-4",
+                "nombre": "Short Joma",
+                "descripcion": "Short Joma Drive Blanco Tenis / Padel",
+                "precio": 38000,
+                "imagen": "../img/short4.webp"
+            },
+            {
+                "id": "short-5",
+                "nombre": "Short Yonex",
+                "descripcion": "Short Yonex Verde Tenis / Padel",
+                "precio": 34000,
+                "imagen": "../img/short5.webp"
+            },
+            {
+                "id": "short-6",
+                "nombre": "Short Yonex",
+                "descripcion": "Short Yonex 0030 Negro 2023",
+                "precio": 36000,
+                "imagen": "../img/short6.webp"
+            },
+            {
+                "id": "short-7",
+                "nombre": "Short Babolat",
+                "descripcion": "Short Babolat Play Blue Aster",
+                "precio": 37000,
+                "imagen": "../img/short7.webp"
+            },
+            {
+                "id": "short-8",
+                "nombre": "Short Babolat",
+                "descripcion": "Short Babolat Play Angel Blue Tenis / Padel",
+                "precio": 39000,
+                "imagen": "../img/short8.webp"
+            }
+        ]
+    }
+}
+
+   

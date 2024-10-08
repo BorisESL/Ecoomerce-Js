@@ -1,0 +1,178 @@
+{
+"mujer": {
+    "zapatillas": [
+        {
+            "id": "zapatilla-1",
+            "nombre": "Zapatillas Lotto",
+            "descripcion": "Zapatilla Tenis Mujer Lotto - Mirage 600 Alr Azul Blanco",
+            "precio": 79000,
+            "imagen": "../img/zapatillam1.webp"
+        },
+        {
+            "id": "zapatilla-2",
+            "nombre": "Zapatillas Lotto",
+            "descripcion": "Zapatilla De Tenis Lotto Mirage 300 Cly - Mujer",
+            "precio": 79000,
+            "imagen": "../img/zapatillam2.webp"
+        },
+        {
+            "id": "zapatilla-3",
+            "nombre": "Zapatillas Lotto",
+            "descripcion": "Zapatillas Lotto Zoom Diseño Mirage Tenis Mujer",
+            "precio": 81000,
+            "imagen": "../img/zapatillam3.webp"
+        },
+        {
+            "id": "zapatilla-4",
+            "nombre": "Zapatillas On",
+            "descripcion": "Zapatillas On Grand Court Blanca Para Tenis Mujer",
+            "precio": 78000,
+            "imagen": "../img/zapatillasm4.webp"
+        },
+        {
+            "id": "zapatilla-5",
+            "nombre": "Zapatillas Yonex",
+            "descripcion": "Zapatillas Yonex Royal Complete Mujer",
+            "precio": 83000,
+            "imagen": "../img/zapatillasm5.webp"
+        },
+        {
+            "id": "zapatilla-6",
+            "nombre": "Zapatillas Yonex",
+            "descripcion": "Zapatillas Yonex Charged Mujer",
+            "precio": 85000,
+            "imagen": "../img/zapatillasm6.webp"
+        },
+        {
+            "id": "zapatilla-7",
+            "nombre": "Zapatillas Yonex",
+            "descripcion": "Zapatillas Yonex Gel Nimbus Mujer",
+            "precio": 87000,
+            "imagen": "../img/zapatillasm7.webp"
+        },
+        {
+            "id": "zapatilla-8",
+            "nombre": "Zapatillas Yonex",
+            "descripcion": "Zapatillas Yonex 327 verde Mujer",
+            "precio": 89000,
+            "imagen": "../img/zapatillasm8.webp"
+        }
+    ],
+    "poleras": [
+        {
+            "id": "polera-1",
+            "nombre": "Polera Puma",
+            "descripcion": "Polera Mujer Puma Training Rosa",
+            "precio": 43000,
+            "imagen": "../img/poleram1.webp"
+        },
+        {
+            "id": "polera-2",
+            "nombre": "Polera Nike",
+            "descripcion": "Polera Nike Sportswear Mujer Blanca",
+            "precio": 45000,
+            "imagen": "../img/poleram2.webp"
+        },
+        {
+            "id": "polera-3",
+            "nombre": "Polera Adidas",
+            "descripcion": "Polera Adidas Essentials Mujer Negra",
+            "precio": 47000,
+            "imagen": "../img/poleram3.webp"
+        },
+        {
+            "id": "polera-4",
+            "nombre": "Polera Adidas",
+            "descripcion": "Polera Adidas HeatGear Mujer Azul",
+            "precio": 46000,
+            "imagen": "../img/poleram4.webp"
+        },
+        {
+            "id": "polera-5",
+            "nombre": "Polera Joma",
+            "descripcion": "Polera Joma Sport Mujer Roja",
+            "precio": 44000,
+            "imagen": "../img/poleram5.webp"
+        },
+        {
+            "id": "polera-6",
+            "nombre": "Polera Joma",
+            "descripcion": "Polera Joma Tenis Mujer Rosa-Negra",
+            "precio": 47000,
+            "imagen": "../img/poleram6.webp"
+        },
+        {
+            "id": "polera-7",
+            "nombre": "Polera Munich ",
+            "descripcion": "Polera Munich Essentials Mujer",
+            "precio": 45000,
+            "imagen": "../img/poleram7.webp"
+        },
+        {
+            "id": "polera-8",
+            "nombre": "Polera Munich",
+            "descripcion": "Polera Munich Sport Mujer Negra",
+            "precio": 43000,
+            "imagen": "../img/poleram8.webp"
+        }
+    ],
+    "faldas": [
+        {
+            "id": "falda-1",
+            "nombre": "Falda Nike",
+            "descripcion": "Falda Nike Court Mujer Roja",
+            "precio": 52000,
+            "imagen": "../img/falda1.webp"
+        },
+        {
+            "id": "falda-2",
+            "nombre": "Falda Adidas",
+            "descripcion": "Falda Adidas Tennis Mujer Blanca",
+            "precio": 54000,
+            "imagen": "../img/falda2.webp"
+        },
+        {
+            "id": "falda-3",
+            "nombre": "Falda Reebok",
+            "descripcion": "Falda Reebok Training Mujer Naranja",
+            "precio": 53000,
+            "imagen": "../img/falda3.webp"
+        },
+        {
+            "id": "falda-4",
+            "nombre": "Falda Puma",
+            "descripcion": "Falda Puma Sports Mujer Blanca",
+            "precio": 51000,
+            "imagen": "../img/falda4.webp"
+        },
+        {
+            "id": "falda-5",
+            "nombre": "Falda Joma",
+            "descripcion": "Falda Joma Running Mujer Rosa",
+            "precio": 55000,
+            "imagen": "../img/falda5.webp"
+        },
+        {
+            "id": "falda-6",
+            "nombre": "Falda Asics",
+            "descripcion": "Falda Asics Court Mujer Militar",
+            "precio": 53000,
+            "imagen": "../img/falda6.webp"
+        },
+        {
+            "id": "falda-7",
+            "nombre": "Falda Asics",
+            "descripcion": "Falda New Asics Essentials Mujer Azul",
+            "precio": 52000,
+            "imagen": "../img/falda7.webp"
+        },
+        {
+            "id": "falda-8",
+            "nombre": "Falda Lotto",
+            "descripcion": "Falda Lotto Sport Mujer Negra",
+            "precio": 54000,
+            "imagen": "../img/falda8.webp"
+        }
+    ]
+}
+}
