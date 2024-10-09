@@ -116,6 +116,23 @@ function agregarAlCarrito(e) {
             actualizarNumeroCarrito();
         }
         
+        // Mostrar notificación Toastify
+        Toastify({
+            text: `${productoSeleccionado.nombre} añadido al carrito (Total: ${carrito.reduce((sum, item) => sum + item.cantidad, 0)})`,
+            duration: 2000,
+            close: true,
+            gravity: "top", 
+            position: "right", 
+            stopOnFocus: true, 
+            style: {
+                background: "linear-gradient(to right, #00b09b, green)",
+                color: "white",
+                borderRadius: "10px", 
+            padding: "10px 20px",
+            },
+            onClick: function(){} // Callback after click
+        }).showToast();
+
         console.log('Producto agregado al carrito:', productoSeleccionado.nombre);
     } else {
         console.error('Producto no encontrado');
@@ -219,9 +236,28 @@ function eliminarDelCarrito(e) {
 }
 
 function vaciarCarrito() {
-    localStorage.setItem('carrito', JSON.stringify([]));
-    cargarProductosCarrito();
-    actualizarNumeroCarrito();
+    Swal.fire({
+        title: "¿Estás seguro?",
+        text: "No podrás revertir esta acción!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "green",
+        cancelButtonColor: "red",
+        confirmButtonText: "Sí, vaciar carrito!",
+        cancelButtonText: "Cancelar"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            localStorage.setItem('carrito', JSON.stringify([]));
+            cargarProductosCarrito();
+            actualizarNumeroCarrito();
+            Swal.fire({
+                title: "Carrito vaciado!",
+                text: "Tu carrito ha sido vaciado.",
+                icon: "success",
+                confirmButtonColor: "green",
+            });
+        }
+    });
 }
 
 function actualizarTotal() {
@@ -234,11 +270,23 @@ function actualizarTotal() {
 }
 
 function comprar() {
-    localStorage.setItem('carrito', JSON.stringify([]));
-    const contenedorCarrito = document.querySelector("#contenedor-carrito");
-    contenedorCarrito.innerHTML = '<p class="compra-exitosa">¡Gracias por tu compra!</p>';
-    actualizarNumeroCarrito();
-    actualizarTotal();
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "¡Compra realizada con éxito!",
+        text: "Gracias por tu compra",
+        showConfirmButton: false,
+        timer: 1500,
+        background: '#f0f0f0',
+        iconColor: '#4CAF50'
+    }).then(() => {
+        // Acciones después de que se cierre la alerta
+        localStorage.setItem('carrito', JSON.stringify([]));
+        const contenedorCarrito = document.querySelector("#contenedor-carrito");
+        contenedorCarrito.innerHTML = '<p class="compra-exitosa">¡Gracias por tu compra!</p>';
+        actualizarNumeroCarrito();
+        actualizarTotal();
+    });
 }
 
 // Agregar event listeners para los botones de categoría
