@@ -24,21 +24,24 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <button class="boton-categoria"><i class="fas fa-running"></i> Zapatillas</button>
+                        <button class="boton-categoria active" data-categoria="zapatillas"><i
+                                class="fas fa-running"></i> Zapatillas</button>
                     </li>
                     <li>
-                        <button class="boton-categoria"><i class="fas fa-running"></i> Poleras</button>
+                        <button class="boton-categoria" data-categoria="poleras"><i class="fas fa-tshirt"></i>
+                            Poleras</button>
                     </li>
                     <li>
-                        <button class="boton-categoria"><i class="fas fa-running"></i> Shorts</button>
+                        <button class="boton-categoria" data-categoria="shorts"><i class="fas fa-running"></i>
+                            Shorts</button>
                     </li>
-                    <li>
-                        <a class="boton-categoria" href="../pages/mujer.html"><i class="fa-solid fa-arrow-left"></i>
-                            Ropa Mujer</a>
+                    <a class="boton-categoria" href="../pages/mujer.html"><i class="fa-solid fa-arrow-left"></i>
+                        Ropa Mujer</a>
                     </li>
                     <li>
                         <a class="boton-carro" href="./carrito.html">🛒
-                            Carrito <span class="numero">0</span></a>
+                            Carrito <span id="numero-carrito" class="numero">0</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -50,10 +53,21 @@
         </aside>
 
         <main>
-            <h1 class="titulo-principal">PRODUCTOS HOMBRE</h1>
-            <div class="productos" id="productos"></div>
-            <!-- aqui iba la seccion de proudctos hombres -->
-
+            <h1 class="titulo-principal">PRODUCTOS HOMBRE</h1> 
+            <div id="productos-container">
+                <section id="zapatillas" class="categoria active">
+                    <h2>ZAPATILLAS</h2>
+                    <div class="contenedor-productos"></div>
+                </section>
+                <section id="poleras" class="categoria">
+                    <h2>POLERAS</h2>
+                    <div class="contenedor-productos"></div>
+                </section>
+                <section id="shorts" class="categoria"> 
+                    <h2>SHORTS</h2> 
+                    <div class="contenedor-productos"></div>
+                </section>
+            </div>
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
