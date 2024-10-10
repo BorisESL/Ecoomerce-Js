@@ -1,6 +1,7 @@
-// main.js
+
 let productosData = [];
 
+// Determina en qué página se encuentra el usuario
 document.addEventListener('DOMContentLoaded', () => {
     const isHombrePage = document.querySelector('.titulo-principal')?.textContent.includes('HOMBRE');
     const isMujerPage = document.querySelector('.titulo-principal')?.textContent.includes('MUJER');
@@ -17,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarNumeroCarrito();
     }
 });
+
+// carga productos desde el archivo Json
 function cargarProductos() {
     const isHombrePage = document.querySelector('.titulo-principal').textContent.includes('HOMBRE');
     const dataUrl = isHombrePage ? "../dataHombre.json" : "../dataMujer.json";
@@ -30,6 +33,7 @@ function cargarProductos() {
         .catch(error => console.error('Error:', error));
 }
 
+// Muestra los productos en la página
 function mostrarProductos() {
     const contenedorProductos = document.querySelector('#productos-container');
     contenedorProductos.innerHTML = '';
@@ -74,6 +78,7 @@ function mostrarProductos() {
     mostrarCategoria('zapatillas');
 }
 
+// muestra categoria especifica
 function mostrarCategoria(categoriaId) {
     const secciones = document.querySelectorAll('.categoria');
     secciones.forEach(seccion => {
@@ -94,6 +99,7 @@ function mostrarCategoria(categoriaId) {
     });
 }
 
+//Agrega producto al carro
 function agregarAlCarrito(e) {
     const idProducto = e.target.getAttribute('data-id');
     const productoSeleccionado = encontrarProducto(idProducto);
@@ -116,7 +122,6 @@ function agregarAlCarrito(e) {
             actualizarNumeroCarrito();
         }
         
-        // Mostrar notificación Toastify
         Toastify({
             text: `${productoSeleccionado.nombre} añadido al carrito (Total: ${carrito.reduce((sum, item) => sum + item.cantidad, 0)})`,
             duration: 2000,
@@ -130,7 +135,7 @@ function agregarAlCarrito(e) {
                 borderRadius: "10px", 
             padding: "10px 20px",
             },
-            onClick: function(){} // Callback after click
+            onClick: function(){} 
         }).showToast();
 
         console.log('Producto agregado al carrito:', productoSeleccionado.nombre);
@@ -139,6 +144,7 @@ function agregarAlCarrito(e) {
     }
 }
 
+// encuantra el producto segun su id
 function encontrarProducto(id) {
     for (const categoria in productosData) {
         const producto = productosData[categoria].find(p => p.id === id);
@@ -147,6 +153,7 @@ function encontrarProducto(id) {
     return null;
 }
 
+// actualiza el numero de productos del carro
 function actualizarNumeroCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const numeroCarrito = document.querySelector('#numero-carrito');
@@ -157,7 +164,7 @@ function actualizarNumeroCarrito() {
     }
 }
 
-// Funciones para la página del carrito
+// Funciones para cargar carrito
 function cargarProductosCarrito() {
     const contenedorCarrito = document.querySelector("#contenedor-carrito");
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -280,7 +287,6 @@ function comprar() {
         background: '#f0f0f0',
         iconColor: '#4CAF50'
     }).then(() => {
-        // Acciones después de que se cierre la alerta
         localStorage.setItem('carrito', JSON.stringify([]));
         const contenedorCarrito = document.querySelector("#contenedor-carrito");
         contenedorCarrito.innerHTML = '<p class="compra-exitosa">¡Gracias por tu compra!</p>';
@@ -289,7 +295,6 @@ function comprar() {
     });
 }
 
-// Agregar event listeners para los botones de categoría
 const botonesCategorias = document.querySelectorAll('.boton-categoria');
 botonesCategorias.forEach(boton => {
     boton.addEventListener('click', (e) => {
